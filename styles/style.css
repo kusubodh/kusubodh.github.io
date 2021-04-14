@@ -2,6 +2,10 @@
     box-sizing: border-box
 }
 
+.logotext {
+    font-size: 40px;
+}
+
 
 /* Set height of body and the document to 100% */
 
@@ -10,7 +14,7 @@ html {
     height: 100%;
     margin: 0;
     font-family: Arial;
-    background-color: black;
+    background-color: seagreen;
     color: whitesmoke;
 }
 
@@ -18,21 +22,22 @@ html {
 /* Style tab links */
 
 header {
-    background-image: linear-gradient(to bottom right, purple, black);
     text-align: left;
     padding: 2px;
-    color: white;
+    color: purple;
+    background-color: whitesmoke;
 }
 
 .content {
     height: 85%;
-    background-image: linear-gradient(to right, purple, black);
+    background-color: whitesmoke;
+    color: black;
 }
 
 footer {}
 
 .tablink {
-    background-color: #555;
+    background-color: darkcyan;
     color: white;
     float: left;
     border: none;
@@ -45,6 +50,11 @@ footer {}
 
 .tablink:hover {
     background-color: #777;
+}
+
+.content {
+    text-align: center;
+    font-family: cursive;
 }
 
 
