@@ -3,17 +3,19 @@
 
 <head>
     <title>My Title</title>
+    <!--  Responsive -->
+    <meta name="mywebapp" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <div class="header">
+    <header>
         <h1>
             Welcome to my Page
         </h1>
-    </div>
+    </header>
     <div class="navmenu">
-        <button class="tablink" onclick="openPage('Home', this)">Home</button>
+        <button class="tablink" onclick="openPage('Home', this)" id="defaultOpen">Home</button>
         <button class="tablink" onclick="openPage('About', this)">About Me</button>
         <button class="tablink" onclick="openPage('Contact', this)">Contact Me</button>
         <button class="tablink" onclick="openPage('Gallery', this)">My Gallery</button>
@@ -42,13 +44,26 @@
         </div>
 
         <div id="Gallery" class="tabcontent">
-            <h3>Gallery</h3>
-            <img src="images/dp.jpg" alt="dp">
+            <div class="row">
+                <div class="column">
+                    <img src="images/img1.jpg" alt="Snow" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="images/img2.jpg" alt="Forest" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="images/img3.jpg" alt="Mountains" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="images/img4.jpg" alt="Mountains" style="width:100%">
+                </div>
+            </div>
         </div>
     </div>
-    <div class="footer">
-        Thanks for visiting....
-    </div>
+    <footer>
+        <p>Author: Subodh Kumar<br>
+            <a href="mailto:subodh.kumar@zemosolabs.com">subodh.kumar@zemosolabs.com</a></p>
+    </footer>
 
     <script src="js/action.js"></script>
 
