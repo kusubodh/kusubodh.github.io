@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Title</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>
+            Welcome to my Page
+        </h1>
+    </div>
+    <div class="navmenu">
+        <button class="tablink" onclick="openPage('Home', this)">Home</button>
+        <button class="tablink" onclick="openPage('About', this)">About Me</button>
+        <button class="tablink" onclick="openPage('Contact', this)">Contact Me</button>
+        <button class="tablink" onclick="openPage('Gallery', this)">My Gallery</button>
+        <!--  -->
+    </div>
+
+    <div class="content">
+        <div id="Home" class="tabcontent">
+            <h3>Home</h3>
+            <p>This is home...............</p>
+        </div>
+        <div id="About" class="tabcontent">
+            <h3>About Me</h3>
+            <p>about : { <br>name : 'Subodh Kumar', <br> email : 'subodh@zemoso.com' <br>}
+            </p>
+        </div>
+        <div id="Contact" class="tabcontent">
+            <div>Message</div>
+            <div><input id="name" type="text"></div>
+            <div></div>
+            <div><input id="email" type="text"></div>
+            <div></div>
+            <div><textarea id="myTextarea"></textarea></div>
+            <div></div>
+            <button type="button" onclick="myFunction()">Send</button>
+        </div>
+
+        <div id="Gallery" class="tabcontent">
+            <h3>Gallery</h3>
+            <img src="images/dp.jpg" alt="dp">
+        </div>
+    </div>
+    <div class="footer">
+        Thanks for visiting....
+    </div>
+
+    <script src="js/action.js"></script>
+
+</body>
+
+</html>
