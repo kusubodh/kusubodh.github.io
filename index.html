@@ -35,21 +35,19 @@
         </div>
         <div id="Contact" class="tabcontent">
             <div>Message</div>
-            <div><input id="name" type="text"></div>
-            <div></div>
-            <div><input id="email" type="text"></div>
-            <div></div>
-            <div><textarea id="myTextarea"></textarea></div>
+            <div><label for="name">Name : </label><input id="name" type="text" placeholder="Your Name..."></div>
+            <div><label for="email">Email : </label><input id="email" type="text" placeholder="Your Email..."></div>
+            <div><label for="myTextarea">Message</label><br><textarea id="myTextarea"></textarea></div>
             <div></div>
             <button type="button" onclick="myFunction()">Send</button>
         </div>
 
         <div id="Gallery" class="tabcontent">
             <div class="grid-container">
-                <div class="grid-item"><img src="images/img1.jpg"></div>
-                <div class="grid-item"><img src="images/img2.jpg"></div>
-                <div class="grid-item"><img src="images/img3.jpg"></div>
-                <div class="grid-item"><img src="images/img4.jpg"></div>
+                <div class="grid-item" onclick="selectImage(this)"><img src="images/img1.jpg" alt="Image1"></div>
+                <div class="grid-item" onclick="selectImage(this)"><img src="images/img2.jpg" alt="Image2"></div>
+                <div class="grid-item" onclick="selectImage(this)"><img src="images/img3.jpg" alt="Image3"></div>
+                <div class="grid-item" onclick="selectImage(this)"><img src="images/img4.jpg" alt="Image4"></div>
 
             </div>
         </div>

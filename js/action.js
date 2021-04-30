@@ -6,8 +6,8 @@ function openPage(pageName, elmnt) {
     }
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-        tablinks[i].style.color = "black";
+        tablinks[i].style.backgroundColor = "black";
+        tablinks[i].style.color = "wheat";
     }
     document.getElementById(pageName).style.display = "block";
     elmnt.style.backgroundColor = 'purple';
@@ -18,7 +18,7 @@ function myFunction() {
     var x = document.getElementById("myTextarea").value;
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
-    x = "Message is Sent \n Name : " + name + "\nEmail : " + email + "\n Message :  " + x;
+    x = "Message is Sent \n Name : " + name + "\n Email : " + email + "\n Message :  " + x;
 
     //document.getElementById("demo").innerHTML = x;
     alert(x);
