@@ -1,99 +1,52 @@
-* {
-    box-sizing: border-box
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: lightblue;
+    padding: 10px;
+    margin: 0%;
 }
 
-.logotext {
-    font-size: 40px;
-}
-
-
-/* Set height of body and the document to 100% */
-
-body,
-html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial;
-    background-color: seagreen;
-    color: whitesmoke;
-}
-
-
-/* Style tab links */
-
-header {
-    text-align: left;
-    padding: 2px;
-    color: purple;
-    background-color: whitesmoke;
-}
-
-.content {
-    height: 85%;
-    background-color: whitesmoke;
-    color: black;
-}
-
-footer {}
-
-.tablink {
-    background-color: darkcyan;
-    color: white;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 25%;
-}
-
-.tablink:hover {
-    background-color: #777;
-}
-
-.content {
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 1px;
     text-align: center;
-    font-family: cursive;
-}
-
-
-/* Style the tab content (and add height:100% for full page content) */
-
-.tabcontent {
-    display: none;
-    padding: 100px 20px;
-    height: 100%;
-}
-
-
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-
-.column {
-    float: left;
-    width: 25%;
-    padding: 5px;
-}
-
-
-/* Clear floats after image containers */
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.row {
-    display: flex;
-}
-
-.column {
-    flex: 25%;
-    padding: 5px;
+    margin: 5px;
 }
 
 img {
-    width: 100px;
-    height: 300px;
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    margin: 0px;
+    padding: 5px;
+    background-color: blueviolet;
+    color: white;
+    align-self: flex-end;
+}
+
+header {
+    margin: 0%;
+    padding: 5px;
+    background-color: blueviolet;
+    color: wheat;
+}
+
+.navmenu {
+    width: 100%;
+}
+
+.tablink {
+    width: 20%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 0%;
+}
+
+.dp {
+    padding-left: 85%;
+    padding-right: 0%;
+    width: 30px;
 }

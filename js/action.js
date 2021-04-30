@@ -7,9 +7,11 @@ function openPage(pageName, elmnt) {
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].style.backgroundColor = "";
+        tablinks[i].style.color = "black";
     }
     document.getElementById(pageName).style.display = "block";
     elmnt.style.backgroundColor = 'purple';
+    elmnt.style.color = "wheat";
 }
 
 function myFunction() {
