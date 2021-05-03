@@ -1,22 +1,24 @@
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
+    grid-template-rows: 25vh;
     background-color: lightblue;
     padding: 10px;
     margin: 0%;
+    height: 75vh;
 }
 
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: auto;
-    text-align: center;
     margin: 5px;
+    text-align: center;
+    height: 25vh;
 }
 
 img {
-    height: 150px;
-    width: 200px;
+    width: 400px;
+    height: 25vh;
 }
 
 footer {
@@ -52,14 +54,14 @@ header {
 img.dp {
     padding-left: 85%;
     padding-right: 0%;
-    width: 20px;
+    width: 25px;
     height: 30px;
-    border-radius: 1px;
     border-color: black;
+    border: 1px;
 }
 
 .tabcontent {
-    height: 100vh;
+    height: 80vh;
 }
 
 input[type=text] {
